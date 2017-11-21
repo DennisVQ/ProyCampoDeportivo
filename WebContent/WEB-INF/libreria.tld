@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.0</jspversion>
+	<shortname>Etiquetas</shortname>
+	
+	<tag> <name>comboDistrito</name>
+		<tagclass>etiquetas.ComboTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Muestra los distritos de la base de datos</info>
+	</tag> 
+	<tag> <name>comboCategoria</name>
+		<tagclass>etiquetas.ComboCat</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Muestra los categoria de postres</info>
+	</tag> 
+</taglib>

@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+header img:nth-child(1){
+	display: block;
+	width: 20%;
+	margin-bottom: 10px;
+}
+header img:nth-child(2){
+	display:block;
+	width: 100%;
+}
+
+aside{
+	display:inline-block;
+	vertical-align: top;
+	width: 20%;
+}
+#articulos{
+	display: inline-block;
+	width: 79%;
+}
+aside nav{
+	margin:10px;
+}
+aside nav a{
+	display:block;
+	margin-bottom: 10px;
+}
+#articulos article{
+	margin:15px;
+}
+#articulos article img{
+	display:inline-block;
+	width: 15%;
+	margin-right: 20px
+}
+#articulos article p{
+	display:inline-block;
+	width: 80%;
+	vertical-align: top;
+	margin-top: 0px;
+	text-align: justify;
+}
+footer{
+	display:inline-block;
+	background-color:grey;
+	margin:5px auto;
+	border: 1px solid black;
+	width: 100%;
+}
+footer p{
+	width: 50%;
+	float:left;
+	margin:16px;
+	vertical-align: middle;
+	margin-left: 15px;
+	color: white;
+}
+footer img{
+	width: 33px;
+	float:right;
+	margin:7px;
+}

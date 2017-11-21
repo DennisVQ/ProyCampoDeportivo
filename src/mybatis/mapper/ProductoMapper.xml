@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mybatis.mapper.ProductoMapper">
+
+	<insert id="registrar" parameterType="model.Producto" >
+		INSERT INTO tb_producto VALUES (null, #{nombre}, 
+						#{precio}, 
+						#{stock}, 
+						#{categoria}, 
+						#{fechareg})
+	</insert>
+	
+	
+	<select id="listado" resultType="model.Producto">
+		SELECT  cod_pro as codigo, 
+				nom_pro as nombre, 
+				pre_pro as precio, 
+				stk_pro as stock, 
+				cat_pro as categoria, 
+				fec_reg_pro as fechareg 
+				from tb_producto
+	</select>
+
+
+	<select id="obtener" parameterType="int" resultType="model.Producto">
+	select  cod_pro as codigo,
+			nom_pro as nombre
+			from tb_producto
+			where cod_pro = #{codigo}
+	</select>
+	
+	<insert id="comprar" parameterType="model.ProdVendido">
+	INSERT INTO tb_venta VALUES (null, #{codigoProd},#{cantidad})
+	</insert>
+</mapper>
+
+
+
